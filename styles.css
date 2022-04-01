@@ -1,0 +1,94 @@
+html {
+   background: rgb(34, 8, 44);
+   color: white;
+   
+}
+
+body {
+    font-family:Georgia, serif;
+   background: rgb(231, 191, 184);
+   color: rgb(34, 29, 29);
+   max-width: 2000px;
+   margin: 0 auto;
+}
+
+header ,footer {
+   background: rgb(29, 10, 46);
+   color: white;
+}
+
+ul {
+    margin: 5px;
+    padding: 15px;
+    
+}
+
+
+header li {
+    display: inline;
+}
+
+li {
+    list-style: circle ;
+    line-height: 30px;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
+
+main {
+    display: inline-block;
+    width: 1000px;
+    padding: 10px;
+}
+
+aside {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+footer li {
+    display: inline;
+}
+
+.product {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
+}
+
+p:first-of-type {
+    color: red;
+}
+
+/* .button {
+    background-color: rgb(248, 239, 239);
+} */
+.button:last-of-type {
+    background-color: rgb(69, 37, 119);
+}
