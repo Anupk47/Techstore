@@ -1,6 +1,7 @@
 html {
    background: rgb(34, 8, 44);
    color: white;
+   font-size: 16px;
    
 }
 
@@ -8,13 +9,20 @@ body {
     font-family:Georgia, serif;
    background: rgb(231, 191, 184);
    color: rgb(34, 29, 29);
-   max-width: 2000px;
+   
    margin: 0 auto;
+   text-align: center;
 }
 
 header ,footer {
    background: rgb(29, 10, 46);
    color: white;
+   padding: 20px 10px;
+
+}
+
+input[type="search"] {
+    width: 100%;
 }
 
 ul {
@@ -26,6 +34,11 @@ ul {
 
 header li {
     display: inline;
+}
+
+header h1 {
+    
+    width: 60%;
 }
 
 li {
@@ -46,18 +59,7 @@ a:hover {
     color: blue;
 }
 
-main {
-    display: inline-block;
-    width: 1000px;
-    padding: 10px;
-}
 
-aside {
-    display: inline-block;
-    width: 400px;
-    vertical-align: top;
-    padding: 10px;
-}
 
 footer li {
     display: inline;
@@ -66,10 +68,13 @@ footer li {
 .product {
     box-sizing: border-box;
     border: 1px solid black;
-    width: 250px;
+    /* width: 30%; */
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+    /* display: inline-block; */
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
 }
 
 
@@ -91,4 +96,121 @@ p:first-of-type {
 } */
 .button:last-of-type {
     background-color: rgb(69, 37, 119);
+}
+
+
+/* product page detail */
+
+.product-detail {
+    width: 660px;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+
+#position {
+    top: 10px; 
+    left: 10px;
+}
+
+
+/* Contact Us */
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+/* adds spacing */
+form > div {
+    margin: 10px 0;
+}
+
+.inline label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* This adds length and enlarges the area of text box */
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+/* Table */
+table {
+    width: 400px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background: rgb(123, 190, 235);
+}
+
+
+@media (min-width: 800px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+
+    .product {
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+/* setup for  */
+@media (min-width: 1000px) {
+    body {
+        text-align: left;
+    }
+
+    header {
+        width: 100%;
+    }
+    main {
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    font-size: 12px;
+    }
+
+
+    aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    body {
+    max-width: 100%;
+    }
+
+    .product {
+        max-width: 30%;
+    }
+
+    input[type="search"] {
+        width: 20%;
+    }
 }
